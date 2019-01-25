@@ -1,0 +1,32 @@
+﻿body {
+    background: linear-gradient(to right,#abbaab,#ffffff);
+    padding: 100px;
+}
+#table {
+    margin: auto;
+    height: 500px;
+    width: 400px;
+    border: 2px solid white;
+    font-size: large;
+    background-color: rgb(222, 216, 216);
+    padding: 100px;
+}
+
+#button1 {
+    padding: 10px;
+    margin:auto;
+    height: 20px;
+    width: 100px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+#FormDiv{
+    padding 10px 0px 10px 100px
+   
+}
+headerSignup{
+    text-align:center;
+}

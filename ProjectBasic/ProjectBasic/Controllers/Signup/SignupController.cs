@@ -14,7 +14,7 @@ namespace ProjectBasic.Controllers.Signup
             ViewData["Name"] = "Sid";
             return View();
         }
-
+        
         // GET: Signup/Details/5
         public ActionResult Details(int id)
         {

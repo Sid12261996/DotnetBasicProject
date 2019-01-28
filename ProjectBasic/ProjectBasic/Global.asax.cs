@@ -19,11 +19,11 @@ namespace ProjectBasic
         }
         public static void RegisterRoutes(RouteCollection routes)
         {
-            routes.MapRoute("Signup",
-                "{controller}/{action}/{id}",
-                new {Controller = "Home", action = "Signup", id = ""
-}
-                );
+            //routes.MapRoute("Signup",
+             //   "{controller}/{action}/{id}",
+             //   new {Controller = "Signup", action = "Signup", id = ""
+//}
+             //   );
         } 
     }
 }

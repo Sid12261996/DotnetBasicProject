@@ -8,10 +8,12 @@ namespace ProjectBasic.Controllers.Signup
 {
     public class SignupController : Controller
     {
+        public const string V = "name";
+
         // GET: Signup
         public ActionResult Signup()
         {
-            ViewData["Name"] = "Sid";
+            
             return View();
         }
         
@@ -43,21 +45,16 @@ namespace ProjectBasic.Controllers.Signup
             }
         }
 
-        // GET: Signup/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: Signup/Edit/5
+      //POST:Signup/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public new ActionResult Profile(FormCollection collection)
         {
             try
             {
-                // TODO: Add update logic here
-
-                return RedirectToAction("Index");
+               // String user = collection.AllKeys.ToString();
+                
+                ViewData["name"] = collection.Keys[0].ToString();
+                return View();
             }
             catch
             { 
@@ -73,7 +70,7 @@ namespace ProjectBasic.Controllers.Signup
 
         // POST: Signup/Delete/5
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        public ActionResult Delete( FormCollection collection)
         {
             try
             {

@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ProjectBasic",
+    "\\ProjectBasic\\Controllers",
+    "\\ProjectBasic\\Controllers\\Signup",
+    "\\ProjectBasic\\Views",
+    "\\ProjectBasic\\Views\\Shared"
+  ],
+  "SelectedNode": "\\ProjectBasic\\Views\\Shared\\_Layout.cshtml",
+  "PreviewInSolutionExplorer": false
+}

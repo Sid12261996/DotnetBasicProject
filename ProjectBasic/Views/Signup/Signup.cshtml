@@ -1,0 +1,62 @@
+﻿@model ProjectBasic.Models.UserCredential 
+@{
+    ViewBag.Title = "Signup";
+}
+
+
+<title>MY FIRST WEBSITE </title>
+
+<h1><strong>Register</strong></h1>
+
+
+
+<div id="FormDiv">
+    <form method="post" action="">
+        <table id="table">
+            <tr><th colspan="2" id="headerSignup"></th></tr>
+            <tr>
+                <td>@Html.Label("User Name")</td>
+                
+                <td>@Html.TextBoxFor(model=>model.UserName,new { @id="Uname"})</td>
+
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.Email)</td>
+                <td>@Html.TextBoxFor(model => model.Email, new { @id = "Email" })</td>
+
+            </tr>
+         <tr>
+             <td>@Html.Label("Password")</td>
+             <td>@Html.TextBoxFor(model => model.Password, new { @id = "Password" })</td>
+
+            </tr>
+            <tr>
+                <td> @Html.Label("Confirm Password"):</td>
+                <td>@Html.TextBox("Confirm Password")</td>
+
+            </tr>
+            <tr>
+                <td>@Html.Label("Pincode"): </td>
+                <td>@Html.TextBoxFor(model => model.pin, new { @id = "pin" })</td>
+
+            </tr>
+            <tr>
+                <td>@Html.Label("State")</td>
+                <td>@Html.TextBoxFor(model => model.state, new { @id = "state" })</td>
+
+            </tr>
+            <tr>
+                <td>@Html.Label("Mobile Number")</td>
+                <td>@Html.TextBoxFor(model => model.mobNo, new { @id = "mobNo" })</td>
+
+            </tr>
+
+
+        </table>
+        <button id="button1" type="submit"  class="btn btn-default" value="Submit" >Submit</button>
+    </form>
+</div>
+
+
+
+
